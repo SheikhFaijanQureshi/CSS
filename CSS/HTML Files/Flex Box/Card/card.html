@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        * {box-sizing: border-box;}
+
+html {font-size: 14pt;}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	width: 90%; 
+	margin: 1rem auto; 
+	padding: 0; 
+}
+@media screen and (max-width: 900px) {
+	main {width: 95%;}
+}
+
+.title {
+	margin: 0; 
+	border: none
+}
+
+.cards {
+	display: flex; 
+	flex-wrap: wrap; 
+	padding: 0; 
+	border: none;
+}
+
+.cards div {flex: 1 30%;}
+.card {
+	display: flex; 
+	flex-direction: column; 
+	margin: 0.5rem;
+	background-color: #fff;
+	border: 1px solid grey;
+	border-radius: 5px;
+	box-shadow: 0px 10px 15px 0 rgba(0,0,0,0.3);
+}
+.card-image {
+	margin: 0;
+}
+	.card-image img {
+		max-width: 100%;
+		border-radius: 3px 3px 0 0;
+	}
+
+.card-text {
+	justify-self: flex-start;
+	margin: 0;
+	padding: 1rem;
+}
+.card-inner {
+	display: flex; 
+	justify-content: space-between;
+	align-items: flex-end;
+	margin: 0; 
+	padding: 1rem;
+}
+
+button {
+	padding: 10px 20px;
+	font-size: 0.85rem;
+	color: white;
+	background-image: radial-gradient(circle, #cc8400, #c20000);
+	background-size: 400% 100%;
+	background-position: top right;
+	border: none;
+	border-radius: 5px;
+	transition: all .4s ease-in-out;
+}
+button:hover {
+	background-image: radial-gradient(circle, #cc8400, #c20000);
+	background-position: center;
+	cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <section class="cards">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://assets.codepen.io/4787486/books-mini.jpg" />
+                </div>
+                <div class="card-text">
+                    <h2>Bookmaker</h2>
+                    <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
+                </div>
+                <div class="card-inner">
+                    <button>Read More</button>
+                    <i class='bx bx-like' aria-hidden="true"></i>
+                    
+                </div>
+            </div>
+                    
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://assets.codepen.io/4787486/calligraphy-dragon.jpg" />
+                </div>
+                <div class="card-text">
+                    <h2>Calligrapher</h2>
+                    <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery.</p>
+                </div>
+                <div class="card-inner">
+                    <button>Read More</button>
+                    <i class='bx bx-like' aria-hidden="true"></i>
+            </div>
+        </div>
+                    
+        <div class="card">
+            <div class="card-image">
+                <img src="https://assets.codepen.io/4787486/calligraphy-wits.jpg" />
+            </div>
+            <div class="card-text">
+                <h2>Famous Quotes</h2>
+                <p>Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics artisan synth stumptown gastropub cornhole celiac swag.</p>
+            </div>
+            <div class="card-inner">
+                <button>Read More</button>
+                <i class='bx bx-like' aria-hidden="true"></i>
+            </div>
+        </div>
+    </section>
+    
+    </main>
+    
+</body>
+</html>

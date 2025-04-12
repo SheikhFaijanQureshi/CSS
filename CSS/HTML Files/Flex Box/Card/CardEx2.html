@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:#1f242d;
+        }
+        .services h2{
+    margin-bottom: 5rem;
+}
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+.services-container .services-box {
+    flex: 1 1 30rem;
+    background: #323946;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid #1f242d;
+    transition: .5s ease;
+}
+
+ .services-container .services-box:hover {
+    border-color: #0ef;
+    transform: scale(1.02);
+ }
+
+.services-box i{
+    font-size: 7rem;
+    color: #0ef;
+}
+.services-box h3{
+    font-size: 2.6rem;
+    color: #0ef;
+}
+.services-box p{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+    color: white;
+}
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: #0ef;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem #0ef;
+    font-size: 1.6rem;
+    color: #323946;a {
+    text-decoration: none;
+  }
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover{
+    box-shadow: none;
+}
+a {
+    text-decoration: none;
+  }
+    </style>
+</head>
+<body>
+    
+    <section class="Services" id="services">
+        <h2 class="heading">Our <span>Services</span> </h2>
+        <div class="services-container">
+
+            <div class="services-box">
+                <i class='bx bx-code'></i>
+                <h3>Web Development</h3>
+                <p>Involves designing, building, and maintaining the entire software stack of a web application, including both the front-end and back-end components. </p>
+                <a href="#" class="btn">Read More</a>
+        </div>
+          
+        <div class="services-box">
+            <i class='bx bxs-paint'></i>
+            <h3>Graphic Design</h3>
+            <p>Graphic design is one of the most in-demand professions.responsible for planning, designing, projecting, and conveying messages or ideas through visual communication. </p>
+            <a href="#" class="btn">Read More</a>
+    </div>
+
+    <div class="services-box">
+        <i class='bx bx-bar-chart-alt' ></i>
+        <h3>Digital Marketing</h3>
+        <p>Involves creating and sharing content like blog posts, videos, and podcasts to educate and engage customers. </p>
+        <a href="#" class="btn">Read More</a>
+</div>
+        </div>
+     </section>
+</body>
+</html>
